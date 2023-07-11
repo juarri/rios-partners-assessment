@@ -6,10 +6,6 @@ import "@fontsource-variable/mulish"
 // Supports weights 400-900
 import "@fontsource-variable/playfair-display"
 
-import typescriptLogo from "./typescript.svg"
-import viteLogo from "/vite.svg"
-import { setupCounter } from "./counter.ts"
-
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   const sideNavigationWrapper = document.getElementById(
@@ -28,6 +24,12 @@ function openNav() {
 
 window.openNav = openNav
 
+declare global {
+  interface Window {
+    openNav: any
+  }
+}
+
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   const sideNavigationWrapper = document.getElementById(
@@ -44,6 +46,12 @@ function closeNav() {
 }
 
 window.closeNav = closeNav
+
+declare global {
+  interface Window {
+    closeNav: any
+  }
+}
 
 // document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 //   <div>
