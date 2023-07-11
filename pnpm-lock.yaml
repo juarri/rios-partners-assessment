@@ -1,14 +1,28 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@csstools/normalize.css': ^12.0.0
+  '@fontsource-variable/mulish': ^5.0.6
+  '@fontsource-variable/playfair-display': ^5.0.6
+  modern-normalize: ^2.0.0
   typescript: ^5.0.2
   vite: ^4.4.0
+
+dependencies:
+  '@csstools/normalize.css': 12.0.0
+  '@fontsource-variable/mulish': 5.0.6
+  '@fontsource-variable/playfair-display': 5.0.6
+  modern-normalize: 2.0.0
 
 devDependencies:
   typescript: 5.1.6
   vite: 4.4.2
 
 packages:
+
+  /@csstools/normalize.css/12.0.0:
+    resolution: {integrity: sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg==}
+    dev: false
 
   /@esbuild/android-arm/0.18.11:
     resolution: {integrity: sha512-q4qlUf5ucwbUJZXF5tEQ8LF7y0Nk4P58hOsGk3ucY0oCwgQqAnqXVbUuahCddVHfrxmpyewRpiTHwVHIETYu7Q==}
@@ -208,6 +222,14 @@ packages:
     dev: true
     optional: true
 
+  /@fontsource-variable/mulish/5.0.6:
+    resolution: {integrity: sha512-swZ9EgzI9iagi2FMaSv1OKvEuCJmr1Y8ASKoS88ItaHGjB5K5ZjlGRvWjchWt+BSEXQHeZdJbuDDiAXAFUjMoQ==}
+    dev: false
+
+  /@fontsource-variable/playfair-display/5.0.6:
+    resolution: {integrity: sha512-aMtc8zEurE3hEzVayxroH7xa3d29R+56cQZEJmi1/2K6zgPxseuNTCa0jwpsPrCWkHpXzZE85dc5LjI8+IDMAA==}
+    dev: false
+
   /esbuild/0.18.11:
     resolution: {integrity: sha512-i8u6mQF0JKJUlGR3OdFLKldJQMMs8OqM9Cc3UCi9XXziJ9WERM5bfkHaEAy0YAvPRMgqSW55W7xYn84XtEFTtA==}
     engines: {node: '>=12'}
@@ -245,6 +267,11 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /modern-normalize/2.0.0:
+    resolution: {integrity: sha512-CxBoEVKh5U4DH3XuNbc5ONLF6dQBc8dSc7pdZ1957FGbIO5JBqGqqchhET9dTexri8/pk9xBL6+5ceOtCIp1QA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /nanoid/3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}

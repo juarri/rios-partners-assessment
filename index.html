@@ -4,10 +4,209 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Rios Partners</title>
+    <meta
+      name="description"
+      content="We are a mission-driven consulting firm creating positive change by delivering value for our clients, investing in our employees, and solving tough problems that benefit our local and global communities."
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+
+    <aside id="side-navigation-wrapper">
+      <button onclick="closeNav()"><div></div></button>
+
+      <div id="side-navigation">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <header>
+      <div>
+        <a href="/">
+          <img
+            src="/images/rios-partners-logo.png"
+            alt="Rios Partners Logo"
+            class="insignia"
+          />
+        </a>
+
+        <button
+          aria-label="Open Navigation Menu"
+          class="navigation-menu-button"
+          onclick="openNav()"
+        >
+          <span>Menu</span>
+          <img src="/svg/hamburger.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section id="hero">
+      <img src="/svg/rios-insignia.svg" alt="" class="insignia" />
+
+      <div class="content">
+        <h1>Transforming organizations through human centered design.</h1>
+
+        <div class="links">
+          <a href="" class="button">Learn More</a>
+          <a href="" class="button secondary">Contact Us</a>
+        </div>
+      </div>
+
+      <a href="#introduction" aria-label="Go to content" class="chevron">
+        <img src="/svg/chevron-down.svg" alt="" />
+      </a>
+    </section>
+
+    <section id="introduction">
+      <h2 class="sr-only">Introduction</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Eu ultrices molestie tempus a
+        odio. Nibh nisi massa semper interdum. Aenean elementum mi lacus vitae
+        amet feugiat. Magnis vitae vulputate nunc vestibulum a lacinia rutrum id
+        risus
+      </p>
+    </section>
+
+    <section id="features">
+      <h2 class="sr-only">Features</h2>
+
+      <div class="feature">
+        <div class="award">
+          <img src="/svg/award.svg" alt="" />
+        </div>
+        <figure>
+          <img
+            src="/images/feature.png"
+            alt="Writing a new sticky note on a wall full of colorful sticky notes."
+          />
+          <figcaption>Lorem ipsum dolor sit amet consectetur. Quis.</figcaption>
+        </figure>
+      </div>
+      <div class="feature">
+        <div class="award">
+          <img src="/svg/award.svg" alt="" />
+        </div>
+        <figure>
+          <img
+            src="/images/feature.png"
+            alt="Writing a new sticky note on a wall full of colorful sticky notes."
+          />
+          <figcaption>Lorem ipsum dolor sit amet consectetur. Quis.</figcaption>
+        </figure>
+      </div>
+      <div class="feature">
+        <div class="award">
+          <img src="/svg/award.svg" alt="" />
+        </div>
+        <figure>
+          <img
+            src="/images/feature.png"
+            alt="Writing a new sticky note on a wall full of colorful sticky notes."
+          />
+          <figcaption>Lorem ipsum dolor sit amet consectetur. Quis.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="meeting-1" class="side-by-side">
+      <img
+        src="/images/meeting-1.png"
+        alt="Man presenting ideas drawn on a whiteboard to coworkers."
+      />
+
+      <div>
+        <h2 class="title">Heading</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Vestibulum aliquam lacus
+          lacinia massa blandit nascetur nullam elit nunc. Integer gravida
+          accumsan rhoncus velit volutpat viverra at eleifend aliquet. Feugiat
+          odio arcu faucibus vestibulum porta sem pellentesque ullamcorper. Dui
+          mauris pellentesque hendrerit adipiscing egestas sit dolor.
+        </p>
+
+        <p>
+          Vulputate at fermentum cras facilisi varius sagittis habitant nunc.
+          Auctor luctus justo commodo posuere nibh nulla mi duis. Feugiat nunc
+          lectus tellus sem molestie. Ultrices massa vitae adipiscing sit dui
+          amet vel. Tempus varius tellus neque magna sapien dui. Integer nulla
+          maecenas nisl non. Imperdiet amet vestibulum est nisl leo non diam
+          semper.
+        </p>
+
+        <a href="" class="button primary">Learn More</a>
+      </div>
+    </section>
+
+    <section id="meeting-2" class="side-by-side reverse">
+      <img
+        src="/images/meeting-2.png"
+        alt="Two workers looking at ideas drawn on whiteboard up close."
+      />
+
+      <div>
+        <h2 class="title">Heading</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Vestibulum aliquam lacus
+          lacinia massa blandit nascetur nullam elit nunc. Integer gravida
+          accumsan rhoncus velit volutpat viverra at eleifend aliquet. Feugiat
+          odio arcu faucibus vestibulum porta sem pellentesque ullamcorper. Dui
+          mauris pellentesque hendrerit adipiscing egestas sit dolor.
+        </p>
+
+        <p>
+          Vulputate at fermentum cras facilisi varius sagittis habitant nunc.
+          Auctor luctus justo commodo posuere nibh nulla mi duis. Feugiat nunc
+          lectus tellus sem molestie. Ultrices massa vitae adipiscing sit dui
+          amet vel. Tempus varius tellus neque magna sapien dui. Integer nulla
+          maecenas nisl non. Imperdiet amet vestibulum est nisl leo non diam
+          semper.
+        </p>
+
+        <a href="" class="button primary">Learn More</a>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur. Sit in ut diam laoreet.
+        Pellentesque euismod vitae facilisis dui mattis. Scelerisque est purus
+        ultrices hac. Sit ullamcorper velit rhoncus sed dignissim donec
+        habitasse blandit non. Gravida est arcu imperdiet fermentum nunc cursus.
+      </p>
+
+      <div class="card">
+        <p class="main-text">
+          Lorem ipsum dolor sit amet consectetur. Fermentum est sed euismod
+          tellus diam urna tellus vitae nulla. Pellentesque dolor at tortor ut
+          rutrum mauris turpis a. Ornare tempus quis nunc leo amet vulputate.
+          Turpis etiam non arcu massa eget.
+        </p>
+
+        <p>First Name Last Name</p>
+      </div>
+    </section>
+
+    <footer><p>Rios Partners 2023</p></footer>
   </body>
 </html>
